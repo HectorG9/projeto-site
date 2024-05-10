@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body { 
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --powhite: #fff;
+    --orange: #df9d0f;
+    --violet: #7017b9;
+    --azul:  rgb(67, 67, 238);
+    --rosa: 9332e2;
+}
 
 .carousel-item {   
     height: 100%;
@@ -11,7 +22,6 @@
 }
 
 .carousel-item::before {
-    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
@@ -19,7 +29,7 @@
 }
 
 .menu-bg {
-    background: #7017b9;
+    background: var(--violet);
 }
 
 .menu {
@@ -29,5 +39,43 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+}
+
+.menu-logo a {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--powhite);
+}
+
+.menu-nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav {
+    display: block;
+    font-size: 1.25em;
+    padding: 10px;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    color: var(--powhite);
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid var(--powhite);
+    margin: 5px;
+    background-color: var(--azul);
+}
+
+.menu-nav a:hover {
+    color: var(--orange);
+    background-color: var(--rosa);
+}
+
+.icone {
+    padding: 5px;
 }
