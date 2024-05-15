@@ -8,21 +8,27 @@ body {
     --orange: #df9d0f;
     --violet: #7017b9;
     --azul:  rgb(67, 67, 238);
-    --rosa: 9332e2;
+    --rosa: #9332e2;
+    --btgray: gray;
+    --btwhite: #f7f7f7f7;
+    --btBlack: #1f1f1f;
+    --btGray-100: #7c7c7c;
+    --btBlue: #2c70ff;
 }
 
 .carousel-item {   
+    height: 100%;
+}
+
+.carousel-item img{
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.carousel-item img{
-    height: 500px;
-}
-
 .carousel-item::before {
     position: absolute;
+    content: '';
     width: 100%;
     height: 100%;
     background: linear-gradient(transparent, rgba(31, 31, 31, 31));
@@ -67,6 +73,7 @@ body {
     padding: 10px;
     text-decoration: none;
     border: 2px solid var(--powhite);
+    border-radius: 5px;
     margin: 5px;
     background-color: var(--azul);
 }
@@ -78,4 +85,77 @@ body {
 
 .icone {
     padding: 5px;
+}
+
+.nwsletter {
+    background-color:var (--btwhite-100) ;
+    padding: 60px calc((100% - 960px) / 2);
+    display: flex;
+}
+
+.nwsletterInfo {
+    flex: 260px;
+}
+
+.nwsletterForm {
+    flex: 260px;
+    display: flex;
+    align-items: center;
+}
+
+/* Aumenta o tamanho do h1 em 48px */
+.nwsletterInfo h1{
+   font-size: 3em;
+   color: var(--btgray);
+}
+
+.nwsletterInfo p{
+    font-size: 1.25em;
+    font-style: italic;
+    max-width: 240px;
+    color: var(--btgray);
+    margin-bottom: 10px;
+}
+
+.nwsletterForm input {
+    flex: 260px;
+    font-style: 1.25em;
+    color: var(--btGray-100);
+    font-style: italic;
+    font-family: "Nunito", "Helvetica Neue", Arial, sans-serif;
+    border: 4px solid var(--btBlue);
+    background-color: transparent;
+    padding: 15px 10px;
+    margin: 0px;
+    border-radius: 0px;
+    height: 50px;
+    width: 400px;
+}
+
+.nwsletterForm button {
+    flex: 200px;
+    font-family: 'Nunito', 'Helvetica', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    background-color: var(--btBlue);
+    color: var(--btwhite);
+    cursor: pointer;
+    padding: 15px 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer1 {
+    background-color: var(--orange);
+    color: var(--btwhite);
+}
+
+.footer1Info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
