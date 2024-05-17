@@ -86,7 +86,17 @@ body {
 .icone {
     padding: 5px;
 }
+.card-text {
+    color: rgb(122, 175, 15);
+}
+.btn {
+    background-color: white;
+    color: black;
+}
 
+.btn:hover {
+    background-color: rgb(122, 175, 15);
+}
 .nwsletter {
     background-color:var (--btwhite-100) ;
     padding: 60px calc((100% - 960px) / 2);
@@ -95,12 +105,6 @@ body {
 
 .nwsletterInfo {
     flex: 260px;
-}
-
-.nwsletterForm {
-    flex: 260px;
-    display: flex;
-    align-items: center;
 }
 
 /* Aumenta o tamanho do h1 em 48px */
@@ -117,17 +121,24 @@ body {
     margin-bottom: 10px;
 }
 
+.nwsletterForm {
+    flex: 260px;
+    display: flex;
+    align-self: center;
+    margin: 10px;
+}
+
 .nwsletterForm input {
     flex: 260px;
     font-style: 1.25em;
     color: var(--btGray-100);
     font-style: italic;
     font-family: "Nunito", "Helvetica Neue", Arial, sans-serif;
-    border: 4px solid var(--btBlue);
+    border: 2px solid var(--btBlue);
     background-color: transparent;
-    padding: 15px 10px;
-    margin: 0px;
-    border-radius: 0px;
+    /* padding: 15px 10px; */
+    /* margin: 0px; */
+    /* border-radius: 0px; */ 
     height: 50px;
     width: 400px;
 }
@@ -137,7 +148,6 @@ body {
     font-family: 'Nunito', 'Helvetica', Arial, sans-serif;
     font-size: 2em;
     font-weight: bold;
-    /* text-transform: uppercase; */
     background-color: var(--btBlue);
     color: var(--btwhite);
     cursor: pointer;
@@ -146,6 +156,60 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.preço {
+    background: var(--btwhite);
+    display: flex;
+    justify-content: space-around;
+}
+.preço-items {
+    flex: 260px;
+    width: 260px;
+    border: 4px solid white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.preço-items h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
+}
+.cobre {
+    color: rgb(203, 109, 81);
+}
+.prata {
+    color: rgb(173, 171, 171);
+}
+.ouro {
+    color: gold;
+}
+.preço-items span {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.preço-items sup {
+    font-size: 1.5rem;
+}
+.preço ul {
+    list-style: none;
+}
+.preço li {
+    line-height: 50px;
+}
+.preço a {
+    text-decoration: none;
+    font-size: 40px;
 }
 
 .footer1 {
@@ -157,4 +221,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+}
+
+.footer2 {
+    background-color: cadetblue;
+    color: var(--btwhite);
+}
+
+.rSociais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
